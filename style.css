@@ -1,0 +1,127 @@
+/************* gælder for alle *************/
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    background-color: gainsboro;
+    margin: 10vw 10vw 0 10vw;
+}
+
+.sectionwrapper {
+    padding: 1em;
+}
+
+h1 {
+    /*    padding: 1em;*/
+}
+
+/************* menu *************/
+
+header {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: white;
+    top: -1px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.navn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    display: inline;
+    padding: 0 0.6em;
+    align-self: flex-end;
+
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    color: darkblue;
+}
+
+/************* mediaqurries *************/
+
+@media screen and (max-width: 650px) and (orientation: portrait) {
+    header {
+        justify-content: center;
+
+    }
+
+    section {
+        background-color: gainsboro;
+        margin: 55vw 10vw 0 10vw;
+    }
+}
+
+@media screen and (max-width: 650px) and (orientation: landscape) {
+    header {
+        justify-content: center;
+
+    }
+
+    section {
+        background-color: gainsboro;
+        margin: 50vw 10vw 0 10vw;
+    }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    section {
+        background-color: gainsboro;
+        margin: 15vw 10vw 0 10vw;
+    }
+}
+
+/************* om *************/
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om img {
+    width: 100%;
+}
+
+#om .column {
+    flex-basis: 400px;
+    flex-grow: 1;
+    padding: 5px 5px 5px 5px;
+
+}
+
+/************* projekter *************/
+
+/************* kontakt *************/
+
+#kontakt {
+    background-color: darkgray;
+    margin: 2vw 10vw 0 10vw;
+    text-align: center;
+    padding: 1em;
+}
+
+/************* footer *************/
+
+footer {
+    text-align: center;
+}
