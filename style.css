@@ -17,6 +17,16 @@ h1 {
     /*    padding: 1em;*/
 }
 
+p,
+h1,
+h2,
+h3,
+ul {
+    font-family: 'Abel-Regular', sans-serif;
+}
+
+
+
 /************* menu *************/
 
 header {
@@ -139,6 +149,42 @@ header a:hover {
 .emne {
     flex-basis: 100px;
     flex-grow: 1;
+}
+
+/************* stilart *************/
+
+#stilart .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column_inro {
+    flex-basis: 400px;
+    flex-grow: 2;
+    padding: 0 15px 0 15px;
+}
+
+.column_proces {
+    flex-basis: 400px;
+    flex-grow: 2;
+}
+
+.column_trin_et {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proces_tekst {
+    flex-basis: 400px;
+    flex-grow: 2;
+    padding: 0 15px 0 15px;
+}
+
+.billede {
+    width: 70%;
+    flex-basis: 400px;
+    flex-grow: 2;
+    padding: 0 15px 0 15px;
 }
 
 /************* kontakt *************/
