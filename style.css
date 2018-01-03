@@ -102,14 +102,44 @@ header a:hover {
     width: 100%;
 }
 
+
+/************* projekter *************/
+
+/*
+#projekter a:hover {
+    opacity: 1;
+    color: gray;
+}
+*/
+
+#projekter img {
+    width: 50%;
+}
+
+
+#projekter .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 #om .column {
-    flex-basis: 400px;
+    flex-basis: 100px;
     flex-grow: 1;
     padding: 5px 5px 5px 5px;
 
 }
 
-/************* projekter *************/
+.column_content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.emne {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
 
 /************* kontakt *************/
 
