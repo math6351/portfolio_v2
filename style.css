@@ -10,6 +10,8 @@ body {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 section h1 {
@@ -21,6 +23,9 @@ section {
     background-color: #ffffff;
     margin: 10vw 10vw 0 10vw;
     border-radius: 1em;
+    padding-right: 3%;
+    padding-left: 3%;
+
 
     /*
     display: flex;
@@ -28,6 +33,12 @@ section {
 */
     /*    d9 for transparant*/
 }
+
+/*
+.column_info p {
+    padding-top: 5%;
+}
+*/
 
 .sectionwrapper {
     padding: 1em;
@@ -44,6 +55,10 @@ h3,
 ul {
     font-family: 'Abel-Regular', sans-serif;
 
+}
+
+p {
+    padding-top: 2%;
 }
 
 /************* menu *************/
@@ -117,7 +132,7 @@ header h1:hover {
     }
 
     section {
-        margin: 50vw 10vw 0 10vw;
+        margin: 20vw 10vw 0 10vw;
     }
 }
 
@@ -136,15 +151,13 @@ header h1:hover {
     flex-wrap: wrap;
 }
 
-#om img {
-    width: 100%;
+.column {
+    flex-basis: 400px;
+    flex-grow: 1;
 }
 
-#om .column {
-    flex-basis: 100px;
-    flex-grow: 1;
-    padding: 5px 5px 5px 5px;
-
+#om img {
+    width: 100%;
 }
 
 /************* projekter *************/
@@ -206,9 +219,11 @@ header h1:hover {
 
 /************* stilart *************/
 
+/*
 .column_info {
     padding: 0 15px 0 15px;
 }
+*/
 
 .column_proces {
     display: flex;
@@ -219,17 +234,22 @@ header h1:hover {
 .proces_tekst {
     flex-basis: 400px;
     flex-grow: 2;
-    padding: 0 15px 0 15px;
+    /*    padding: 0 15px 0 15px;*/
 }
 
 .billede {
     flex-basis: 400px;
     flex-grow: 2;
-    padding: 0 15px 0 15px;
+    /*    padding: 0 15px 0 15px;*/
 }
 
 #stilart img {
-    width: 100%
+    width: 100%;
+    padding: 2%;
+}
+
+#egen_ani img {
+    width: 100%;
 }
 
 
@@ -248,9 +268,10 @@ header h1:hover {
     opacity: 0.7;
 }
 
+/*
 .tlf {
     padding: 1px;
-}
+}*/
 
 #kontakt h3,
 p {
@@ -259,6 +280,10 @@ p {
 
 .mail img:hover {
     opacity: 1;
+}
+
+#kontakt p {
+    padding: 1%;
 }
 
 /************* footer *************/
