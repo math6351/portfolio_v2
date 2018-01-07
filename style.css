@@ -1,28 +1,40 @@
 /************* gælder for alle *************/
 
 body {
-    background-color: #eff1f3;
+    /*    background-color: #eff1f3;*/
+    background: url(img/flot_baggrund.jpg);
+    /*    background-repeat: no-repeat;*/
+    margin: 0;
+    padding: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
+section h1 {
+    text-align: center;
+    padding-top: 1em;
+}
+
 section {
-    background-color: white;
+    background-color: #ffffff;
     margin: 10vw 10vw 0 10vw;
+    border-radius: 1em;
+
     /*
     display: flex;
     flex-wrap: wrap;
 */
+    /*    d9 for transparant*/
 }
 
 .sectionwrapper {
     padding: 1em;
 }
 
-h1 {
-    /*    padding: 1em;*/
+.navn h1 {
+    color: #666666;
 }
 
 p,
@@ -31,13 +43,8 @@ h2,
 h3,
 ul {
     font-family: 'Abel-Regular', sans-serif;
-}
 
-/*
-h1 {
-    color: white;
 }
-*/
 
 /************* menu *************/
 
@@ -47,7 +54,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px 0;
-    background-color: #eff1f3;
+    background-color: #d1e3f59e;
+    /*        #eff1f3;*/
     top: -1px;
     position: fixed;
     z-index: 1;
@@ -81,6 +89,14 @@ header a:hover {
     color: white;
 }
 
+header h1:hover {
+    color: white;
+}
+
+.menu a {
+    color: #666666;
+}
+
 /************* mediaqurries *************/
 
 @media screen and (max-width: 650px) and (orientation: portrait) {
@@ -90,7 +106,6 @@ header a:hover {
     }
 
     section {
-        background-color: gainsboro;
         margin: 55vw 10vw 0 10vw;
     }
 }
@@ -102,17 +117,17 @@ header a:hover {
     }
 
     section {
-        background-color: gainsboro;
         margin: 50vw 10vw 0 10vw;
     }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 1000px) and (orientation: landscape) {
     section {
-        background-color: gainsboro;
         margin: 15vw 10vw 0 10vw;
     }
 }
+
+/************* forside *************/
 
 /************* om *************/
 
@@ -134,19 +149,27 @@ header a:hover {
 
 /************* projekter *************/
 
+#projekter h1 {
+    text-align: center;
+    padding-top: 1em;
+}
+
 #projekter .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     margin: 1em;
+    align-items: center;
 }
 
 .emne {
     width: 220px;
     position: relative;
-    padding: 10px;
+    /*    padding: 10px;*/
+    display: block;
+    margin: auto;
 }
 
-#projekter img {
+#projekter .emne img {
     width: 100%;
     display: inline;
     opacity: 1;
@@ -160,6 +183,25 @@ header a:hover {
 
 #projekter img:hover {
     opacity: 0.3;
+}
+
+.emne_tlf {
+    width: 220px;
+    position: relative;
+    /*    padding: 10px;*/
+    display: block;
+    margin: auto;
+}
+
+.emne_tlf img {
+    width: 50%;
+    display: inline;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.tekst {
+    font-size: 13.8px;
 }
 
 /************* stilart *************/
@@ -203,14 +245,29 @@ header a:hover {
 
 .mail img {
     width: 15%;
+    opacity: 0.7;
 }
 
 .tlf {
     padding: 1px;
 }
 
+#kontakt h3,
+p {
+    color: #666666;
+}
+
+.mail img:hover {
+    opacity: 1;
+}
+
 /************* footer *************/
 
 footer {
     text-align: center;
+
+}
+
+footer p {
+    color: white;
 }
