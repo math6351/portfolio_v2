@@ -21,12 +21,11 @@ section h1 {
 
 section {
     background-color: #ffffff;
-    margin: 10vw 10vw 0 10vw;
+    margin: 8vw 10vw 0 10vw;
     border-radius: 1em;
     padding-right: 3%;
     padding-left: 3%;
-
-
+    padding-bottom: 2%
     /*
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +47,11 @@ section {
     color: #666666;
 }
 
+h1,
+h2 {
+    color: #666666;
+}
+
 p,
 h1,
 h2,
@@ -58,7 +62,18 @@ ul {
 }
 
 p {
+    padding-bottom: 2%;
     padding-top: 2%;
+    color: black;
+}
+
+a:hover {
+    color: #d1e3f5c2;
+}
+
+a {
+    /*    text-decoration: none;*/
+    color: black;
 }
 
 /************* menu *************/
@@ -142,7 +157,72 @@ header h1:hover {
     }
 }
 
+
+@media screen and (max-width: 555px) {
+    header {
+        justify-content: center;
+
+    }
+
+    section {
+        margin: 15vw 10vw 0 10vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        justify-content: center;
+
+    }
+
+    section {
+        margin: 20vw 10vw 0 10vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        justify-content: center;
+
+    }
+
+    section {
+        margin: 30vw 10vw 0 10vw;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    #projekter .emne {
+        width: 800px;
+    }
+    #projekter .emne_tlf img {
+        width: 100%;
+        display: block;
+    }
+
+    #projekter .emne_tlf {
+        width: 800px;
+    }
+
+
+}
+
 /************* forside *************/
+
+#forside img {
+    width: 100%;
+}
+
+#forside h1,
+    {
+    padding: 2%;
+}
+
+#forside h2 {
+    text-align: center;
+    padding: 1%
+}
 
 /************* om *************/
 
@@ -154,10 +234,16 @@ header h1:hover {
 .column {
     flex-basis: 400px;
     flex-grow: 1;
+    padding: 3%;
 }
 
 #om img {
     width: 100%;
+}
+
+#om h1 {
+    text-align: center;
+
 }
 
 /************* projekter *************/
@@ -250,8 +336,15 @@ header h1:hover {
 
 #egen_ani img {
     width: 100%;
+    padding: 2%;
 }
 
+#video_02 img {
+    width: 100%;
+    padding: 2%;
+}
+
+/************* app *************/
 
 /************* kontakt *************/
 
@@ -274,7 +367,7 @@ header h1:hover {
 }*/
 
 #kontakt h3,
-p {
+    {
     color: #666666;
 }
 
@@ -284,6 +377,13 @@ p {
 
 #kontakt p {
     padding: 1%;
+}
+
+/************* kilder *************/
+
+#forside li {
+    padding-top: 2%;
+
 }
 
 /************* footer *************/
